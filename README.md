@@ -9,4 +9,4 @@
 * 关注实际运维问题对于时效性的要求，做了一些工作：加入了时效窗口，重新定义了精度、召回率的指标，从而评判算法的性能；给出了多个计算复杂度很低但是很有效的特征；提出了基于内存存储的数据结构帮助实现快速高效的特征提取。<br>
 此外，还探讨了KPI异常探测问题中，缺失值的处理和不平衡数据的处理方法，我们进行了多个实验，以发现每种处理方法的特点和规律。<br>
 
-![平稳型KPI](GFSAD/pic/stable.png)
+![平稳型KPI](https://raw.github.com/DawnsonLi/repositpry/master/GFSAD/GFSAD/pic/stable.png)
