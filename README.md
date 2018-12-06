@@ -1,8 +1,8 @@
 # GFSAD 
 ## Genaral and fast supervised anomaly detection for KPI data
 ## 注意attention <br>
-数据只存储了一份，在ours/data目录下，其他算法也需要这些数据，使用这些算法时，需要改变数据的位置。程序中数据文件的路径需要修改 <br>
-the data has only one copy, which is located in ours/data, and other algorithms also needs the data. the path of data in code needs to be corrected.<br>
+* 数据只存储了一份，在ours/data目录下，其他算法也需要这些数据，使用这些算法时，需要改变数据的位置。程序中数据文件的路径需要修改 <br>
+* the data has only one copy, which is located in ours/data, and other algorithms also needs the data. the path of data in code needs to be corrected.<br>
 ## 介绍<br>
 * 实际运维中，涉及到数量众多的KPI，例如，一个机房有1000台机器，每台机器有10条监控KPI，那么我们需要实时的监测1000*10条KPI数据，如此多的KPI，依赖人工逐一进行异常算法的选择和配置是不可行的。此外，KPI数据形状各异，每个KPI有不同的特点，需要根据KPI的特性选择合适的算法，并配置合适的参数。而且，我们需要算法不能有太高的计算复杂性，从而满足实际运维对于异常探测速度的要求，如果算法异常探测效果很好但是计算复杂度过高，不能满足探测时效性，也不能接受。
 * 这里给出了一个通用的有监督学习框架，不针对某类KPI数据。通过提取KPI数据的特征，框架能够针对每个KPI的特点进行相应的学习，从而为每个KPI实现自动化异常探测，经过多个真实KPI数据的验证以及与其他几个成熟系统和算法的对比，证实我们提出的方法具有很好的通用性和实用性。<br>
