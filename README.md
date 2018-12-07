@@ -8,3 +8,11 @@
 * 这里给出了一个通用的有监督学习框架，不针对某类KPI数据。通过提取KPI数据的特征，框架能够针对每个KPI的特点进行相应的学习，从而为每个KPI实现自动化异常探测，经过多个真实KPI数据的验证以及与其他几个成熟系统和算法的对比，证实我们提出的方法具有很好的通用性和实用性。<br>
 * 关注实际运维问题对于时效性的要求，做了一些工作：加入了时效窗口，重新定义了精度、召回率的指标，从而评判算法的性能；给出了多个计算复杂度很低但是很有效的特征；提出了基于内存存储的数据结构帮助实现快速高效的特征提取。<br>
 此外，还探讨了KPI异常探测问题中，缺失值的处理和不平衡数据的处理方法，我们进行了多个实验，以发现每种处理方法的特点和规律。<br>
+### KPI数据类型
+我们的数据涉及三大类KPI，包括平稳型，不平稳型，周期型。我们的方法具有通用性，不需要提前判断KPI的类别。 <br>
+* 平稳型
+![平稳型KPI](https://github.com/DawnsonLi/GFSAD/blob/master/pic/stable.png)
+* 不平稳型
+![不平稳型KPI](https://github.com/DawnsonLi/GFSAD/blob/master/pic/unstable.png)
+* 周期型
+![周期型KPI](https://github.com/DawnsonLi/GFSAD/blob/master/pic/seasonal.png)
